@@ -1,0 +1,58 @@
+# Stitch UI Workflow
+
+## Design System Doc
+
+Create `.stitch/DESIGN.md` before generating screens. Include:
+
+- Brand intent and audience.
+- Palette with color roles and hex values.
+- Typography direction.
+- Component rules for buttons, cards, forms, media slots, CTAs and footer.
+- Layout rules and density.
+- Strict media policy.
+
+## Placeholder-First Media Policy
+
+In Stitch prompts, use this rule set unless the user asks otherwise:
+
+- Do not use `<img>`.
+- Do not use remote image URLs.
+- Do not generate AI images.
+- Do not use stock photos.
+- Use styled placeholder rectangles for all media.
+- Label placeholders with exact local paths when known: `IMAGE SLOT: path/to/image.jpg`.
+- Use `LOGO SLOT` or `CLIENT LOGO SLOT` for logos.
+
+## Prompt Shape
+
+Use structured prompts:
+
+```markdown
+Create a high-fidelity desktop UI screen for [route] for [business].
+
+STYLE:
+[Palette, typography, mood, density, component rules]
+
+STRICT MEDIA RULES:
+[Placeholder-first rules]
+
+SEO INTENT:
+[Keywords and search intent]
+
+PAGE STRUCTURE:
+1. Navbar...
+2. Hero...
+3. Sections...
+4. CTA...
+5. Footer...
+```
+
+## Validation
+
+After generation:
+
+- Download HTML/screenshots if available.
+- Check for generated or remote images when placeholder-first was required.
+- Confirm placeholders map to real or planned asset paths.
+- Confirm the design follows the approved routes and content spec.
+- Update a manifest with project ID, screen IDs, files, and notes.

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Business Landing Builder"
+  short_description: "Build SEO business landings end to end."
+  default_prompt: "Use $business-landing-builder to build a high-converting SEO-first landing page from discovery through deploy."
+policy:
+  allow_implicit_invocation: true
