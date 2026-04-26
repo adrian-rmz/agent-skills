@@ -25,6 +25,17 @@ In Stitch prompts, use this rule set unless the user asks otherwise:
 
 ## Prompt Shape
 
+Before sending a screen-generation or edit prompt to Stitch, run the rough prompt through `enhance-prompt` when available. This is a lightweight refinement step, not a separate approval gate.
+
+The enhanced prompt must preserve:
+
+- The approved SEO/content spec.
+- The placeholder-first media policy.
+- Approved routes and business facts only.
+- Exact local asset path labels when known.
+
+Do not allow prompt enhancement to introduce unsupported claims, extra routes, real image URLs, stock photos, generated images, invented testimonials, invented metrics, or invented credentials.
+
 Use structured prompts:
 
 ```markdown

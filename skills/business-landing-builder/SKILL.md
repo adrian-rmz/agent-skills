@@ -7,6 +7,16 @@ description: Build SEO-first business landing pages for companies and local/serv
 
 Use this skill to run a repeatable end-to-end workflow for business landing pages and small SEO websites.
 
+## Optional Companion Skills
+
+This skill works standalone, but performs better with:
+
+- `brainstorming` for discovery, scope, tradeoffs, and approved specs.
+- `stitch-design` for Stitch UI prompts, `.stitch/DESIGN.md`, and high-fidelity screen workflow.
+- `enhance-prompt` for polishing Stitch generation and edit prompts before sending them to Stitch.
+
+If a companion skill or MCP is unavailable, continue with the fallback workflow in `AGENT_SKILL.md` and state the limitation clearly.
+
 ## Start Here
 
 1. Read `AGENT_SKILL.md` first. It is the universal source of truth.
@@ -17,7 +27,8 @@ Use this skill to run a repeatable end-to-end workflow for business landing page
    - Vercel deploy: `references/vercel-deploy-checklist.md`
 3. If available, use external skills in this order:
    - `brainstorming` for idea validation, scope, tradeoffs, and approved spec.
-   - `stitch-design` plus Stitch MCP for `.stitch/DESIGN.md`, prompt enhancement, and high-fidelity UI screens.
+   - `stitch-design` plus Stitch MCP for `.stitch/DESIGN.md` and high-fidelity UI screens.
+   - `enhance-prompt` to refine Stitch screen-generation and edit prompts before using them.
 4. If an external skill or MCP is unavailable, follow the fallback workflow in `AGENT_SKILL.md` and state the limitation clearly.
 
 ## Hard Gates

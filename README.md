@@ -50,6 +50,23 @@ Then invoke it explicitly:
 $business-landing-builder build a landing page for a local dental clinic
 ```
 
+### Optional Companion Skills
+
+`business-landing-builder` works standalone, but is designed to pair well with:
+
+- `brainstorming`: discovery, scope, tradeoff analysis, and approved specs.
+- `stitch-design`: Stitch prompt support, `.stitch/DESIGN.md`, and high-fidelity screen workflow.
+- `enhance-prompt`: lightweight refinement for Stitch generation and edit prompts.
+
+Install this skill and its optional companions with the same GitHub owner:
+
+```bash
+npx skills add adrian-rmz/agent-skills --skill business-landing-builder
+npx skills add https://github.com/obra/superpowers --skill brainstorming
+npx skills add google-labs-code/stitch-skills --skill stitch-design
+npx skills add google-labs-code/stitch-skills --skill enhance-prompt
+```
+
 ## Universal Skill Structure
 
 Every skill should follow this pattern:
